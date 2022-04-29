@@ -24,7 +24,7 @@ noremap <SID>TogRB  :call <SID>TogRB()<CR>
 
 " In case the solarized style was changed, the toggle does update accordingly
 function! s:TogRB()
-    call rainbow#toggle()
+    call rainbowindent#toggle()
 endfunction
 
 if !exists(":ToggleRB")

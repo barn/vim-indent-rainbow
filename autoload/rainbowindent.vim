@@ -10,7 +10,7 @@ if !exists("g:rainbow_colors_color")
 endif
 
 " the code follows
-function! rainbow#enable() abort
+function! rainbowindent#Enable() abort
 	if !exists("w:ms")
 		let w:ms=[]
 	endif
@@ -48,7 +48,7 @@ function! rainbow#enable() abort
 	endif
 endfunction
 
-function! rainbow#disable() abort
+function! rainbowindent#disable() abort
 	if !exists("w:ms")
 		let w:ms=[]
 	endif
@@ -60,14 +60,14 @@ function! rainbow#disable() abort
 	endif
 endfunction
 
-function! rainbow#toggle() abort
+function! rainbowindent#toggle() abort
 	if !exists("w:ms")
 		let w:ms=[]
 	endif
 	if len(w:ms) == 0
-		call rainbow#enable()
+		call rainbowindent#Enable()
 	else
-		call rainbow#disable()
+		call rainbowindent#disable()
 	endif
 endfunction
 

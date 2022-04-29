@@ -72,7 +72,7 @@ if has("autocmd")
   autocmd BufNewFile,BufReadPre,FileReadPre        *.py set fileformat=unix
 "I like wide text, sorry PEP
 " autocmd BufNewFile,BufReadPre,FileReadPre        *.py set textwidth=79
-  autocmd WinEnter,VimEnter *.py :call rainbow#enable()
+  autocmd WinEnter,VimEnter *.py :call rainbowindent#enable()
  augroup END
 endif
 ```
